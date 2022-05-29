@@ -1,0 +1,19 @@
+<section>
+  <h2>Create New Post</h2>
+  <div class="mb-3">
+    <label for="post-title" class="form-label">Title</label>
+    <input
+      type="text"
+      class="form-control"
+      id="post-title"
+      placeholder="Title"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="post-content" class="form-label">Post Content</label>
+    <textarea class="form-control" id="post-content" rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Create</button>
+</section>
+{{#if loggedIn}}{{/if}}
+<script src="/javascript/add-post.js"></script>

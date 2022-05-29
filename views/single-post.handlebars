@@ -1,18 +1,23 @@
-{{> post-info post}}
-
-{{#if loggedIn}}
-<form class="comment-form">
-  <div>
-    <textarea name="comment-body"></textarea>
+<section>
+  <div class="mb-3">
+    <label for="post-title" class="form-label">Title</label>
+    <input
+      type="text"
+      class="form-control"
+      id="post-title"
+      value="{{post.title}}"
+    />
   </div>
-
-  <div>
-    <button type="submit">add comment</button>
-    <button type="button" class="upvote-btn">upvote</button>
+  <div class="mb-3">
+    <label for="post-content" class="form-label">Post Content</label>
+    <textarea
+      class="form-control"
+      id="post-content"
+      rows="3"
+    >{{post.content}}</textarea>
   </div>
-</form>
-{{/if}}
+  <button type="button" id="update-post" class="btn btn-primary">Update</button>
+  <button type="button" id="delete-post" class="btn btn-danger">Delete</button>
+</section>
 
-
-{{#if loggedIn}}
-{{/if}}
+{{#if loggedIn}}{{/if}}

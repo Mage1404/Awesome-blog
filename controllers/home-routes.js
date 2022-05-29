@@ -101,4 +101,14 @@ router.get("/signup", (req, res) => {
   res.render("signup");
 });
 
+router.get("/add", (req, res) => {
+  if (req.session.loggedIn) {
+    res.render("add", {
+      loggedIn: req.session.loggedIn,
+    });
+    return;
+  }
+  res.redirect("/");
+});
+
 module.exports = router;
