@@ -1,0 +1,24 @@
+<form class="edit-post-form">
+  <div class="mb-3">
+    <label for="post-title" class="form-label">Title</label>
+    <input name="post-title" type="text" value="{{post.title}}" />
+  </div>
+  <div class="mb-3">
+    <label for="post-content" class="form-label">Post Content</label>
+    <textarea
+      class="form-control"
+      id="post-content"
+      rows="3"
+    >{{post.content}}</textarea>
+  </div>
+  <button type="submit" class="btn btn-primary edit-post-btn">Update</button>
+  <button
+    type="button"
+    id="delete-post"
+    class="btn btn-danger delete-post-btn"
+  >Delete</button>
+</section>
+</form>
+
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>
