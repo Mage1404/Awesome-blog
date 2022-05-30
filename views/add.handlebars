@@ -1,11 +1,11 @@
-<section>
+<form class="new-post-form">
   <h2>Create New Post</h2>
   <div class="mb-3">
     <label for="post-title" class="form-label">Title</label>
     <input
       type="text"
       class="form-control"
-      id="post-title"
+      name="post-title"
       placeholder="Title"
     />
   </div>
@@ -14,6 +14,5 @@
     <textarea class="form-control" id="post-content" rows="3"></textarea>
   </div>
   <button type="submit" class="btn btn-primary">Create</button>
-</section>
-{{#if loggedIn}}{{/if}}
+</form>
 <script src="/javascript/add-post.js"></script>
