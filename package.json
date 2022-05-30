@@ -1,12 +1,11 @@
 {
-  "name": "hacker-news-clone",
+  "name": "awesome-blog",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "jest",
-    "seeds": "npm run seeds",
-    "start": "npm start"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seeds": "node seeds"
   },
   "author": "",
   "license": "ISC",
